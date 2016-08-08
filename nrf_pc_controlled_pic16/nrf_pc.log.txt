@@ -1,0 +1,38 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo8 -N"D:\grad_project\uC_proteus_py\nrf_pc_controlled_p16\nrf_pc.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\grad_project\uC_proteus_py\nrf_pc_controlled_p16\" -IP"D:\grad_project\uC_proteus_py\nrf_pc_controlled_p16\" "nrf_pc.c" "nRF24L01_lib.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_C.mcl" "__Lib_EEPROM.mcl" "__Lib_FLASH_RW.mcl" "__Lib_I2C_c34.mcl" "__Lib_PWM_c21.mcl" "__Lib_SPI_c345.mcl" "__Lib_UART_c67.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_RS485.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_EthEnc28j60.mcl" "__Lib_EthEnc24j600.mcl" "__Lib_TouchPanel.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	nrf24l01_lib.h
+warning: 52	1506	Implicit conversion of pointer to int	nrf_pc.c
+warning: 52	1508	Implicit conversion of int to ptr	nrf_pc.c
+warning: 58	1506	Implicit conversion of pointer to int	nrf_pc.c
+warning: 66	1509	Generated baud rate is 125000 bps (error = 2.34 percent)	nrf_pc.c
+warning: 122	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 123	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 132	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 133	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 142	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 143	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 156	1505	Suspicious pointer conversion	nrf_pc.c
+warning: 157	1505	Suspicious pointer conversion	nrf_pc.c
+diagnostics: 170	123	Compiled Successfully	nrf_pc.c
+hint: 18	1164	Variable 'res' has been eliminated by optimizer	nrf_pc.c
+hint: 57	1164	Variable 'res' has been eliminated by optimizer	nrf_pc.c
+diagnostics: 0	122	Compilation Started	nrf24l01_lib.h
+diagnostics: 260	123	Compiled Successfully	nRF24L01_lib.c
+hint: 53	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 61	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 93	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 102	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 132	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 144	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 162	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 194	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 200	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+hint: 230	1164	Variable 'res' has been eliminated by optimizer	nRF24L01_lib.c
+diagnostics: 0	127	All files Compiled in 125 ms	 
+hint: 0	1144	Used RAM (bytes): 22 (6%)  Free RAM (bytes): 330 (94%)	Used RAM (bytes): 22 (6%)  Free RAM (bytes): 330 (94%)
+hint: 0	1144	Used ROM (program words): 1086 (13%)  Free ROM (program words): 7106 (87%)	Used ROM (program words): 1086 (13%)  Free ROM (program words): 7106 (87%)
+diagnostics: 0	125	Project Linked Successfully	nrf_pc.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 375 ms	 
+diagnostics: 0	129	Project 'nrf_pc.mcppi' completed: 578 ms	 
+diagnostics: 0	103	Finished successfully: 11 Apr 2016, 16:32:31	nrf_pc.mcppi
