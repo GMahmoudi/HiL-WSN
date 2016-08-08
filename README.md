@@ -1,7 +1,7 @@
 # HiL-WSN
 Hardware-in-the-Loop Simulation, Wireless Sensor Networks
 
-Bachelor project at Tishreen university, Latakia, Syria
+##Bachelor project at Tishreen university, Latakia, Syria
 
 
 Supervisor: Dr.-Ing. Ghadi MAHMOUDI
