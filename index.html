@@ -49,25 +49,25 @@ Using HiL-WSN, a big Wireless Sensor Network can be designed and simulated, both
 <h3>
 <a id="to-run-the-project-follow-these-instructions" class="anchor" href="#to-run-the-project-follow-these-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To run the project follow these instructions:</h3>
 
-<pre><code>- Install OMNET++ (the project has been tested using OMNET++ v4.6)
-- Import the OMNET++ project located in the directory called "omnet" following these steps:
-    - Launch the OMNET++.
-    - File -&gt; import -&gt; Existing Projects into Workspace -&gt; Select archive file -&gt; Browse
-    - Select the file called "wsn_nrf.zip" from the "omnet" directory.
-- In the OMNET++ simulator , from Project Explorer , open the imported project "wsn_nrf".
-- Open the file "src/omnetpp.ini"
-- Click on Run (or Ctrl+F11)
-- You can select the desired network file, by default (in this project) there're three networks:
-    - Simple : a pure virtual network (not connected to external hardware) , it's used to test or visualize the routing protocol on simulated nodes.
-    - hw2sink : a pure hardware network (consisting of two hardware nodes and a sink) , it's used to test the hybrid node (which connects the two environments).
-    - net : the main network which consists of simulated and real nodes .
-</code></pre>
-
 <ul>
-<li>When selecting <strong><em>any network</em></strong> , and <strong><em>before</em></strong> starting the simulation, <strong><em>start the server</em></strong> that connects the simulator to the Internet so that you can view the data of the nodes from any device on your network.
-    - the server is located in the "server" directory , the file name is "server.py".
-
+<li>- Install OMNET++ (the project has been tested using OMNET++ v4.6)</li>
+<li>- Import the OMNET++ project located in the directory called "omnet" following these steps:
 <ul>
+  <li>- Launch the OMNET++.</li>
+  <li>- File -&gt; import -&gt; Existing Projects into Workspace -&gt; Select archive file -&gt; Browse</li>
+  <li>- Select the file called "wsn_nrf.zip" from the "omnet" directory.</li>
+</ul>
+</li>
+<li>- In the OMNET++ simulator , from Project Explorer , open the imported project "wsn_nrf".</li>
+<li>- Open the file "src/omnetpp.ini"</li>
+<li>- Click on Run (or Ctrl+F11)</li>
+<li>- You can select the desired network file, by default (in this project) there're three networks:
+<ul>
+  <li>- Simple : a pure virtual network (not connected to external hardware) , it's used to test or visualize the routing protocol on simulated nodes.</li>
+  <li>- hw2sink : a pure hardware network (consisting of two hardware nodes and a sink) , it's used to test the hybrid node (which connects the two environments).</li>
+  <li>- net : the main network which consists of simulated and real nodes .</li>
+</ul>
+</li>
 <li>Connect the real hybrid node (the circuit which has the USB cable) to PC.</li>
 <li>Get the COM port number (On windows from the Device Manager).</li>
 <li>Start the file located in "pc_client" directory called "hybrid.py" with the port number as the first argument , this script connects the OMNET++ simulator to the real hybrid node (the circuit which is connected to the PC with the USB cable).
@@ -79,9 +79,9 @@ Using HiL-WSN, a big Wireless Sensor Network can be designed and simulated, both
 <li>Switch on the hardware nodes.</li>
 <li>Start the simulator now , and put your CPU on "high performance" energy profile and put the simulator on the fastest animation speed (so that the simulator time is closer to the real time).</li>
 <li>In the simulator log you can see the messages ,that is delivered to the sink node, printed.</li>
-<li>To use the internet server , start your Internet browser , navigate to "<a href="http://127.0.0.1/static/index.html">http://127.0.0.1/static/index.html</a>" in the "uri" field of the page type "/ws/x" where x is the node address.</li>
-</ul>
-</li>
+<li>To expose sink data to an external program like a web server,stop the simulation and open the network file, then change the parameter "exposeToInternet" of sink node to "true".</li>
+<li>Run the simlulation  and  start the external program which must be a udp client connecting to the port defined in the "GLOBALS.h" file called "RTS_PORT", for example run the web server "server.py" located in the "server" directory .</li>
+<ul><li>To use this server , start your Internet browser , navigate to "http://127.0.0.1/static/index.html" in the "uri" field of the page type "/ws/x" where x is the node address.</li></ul>
 </ul>
 
 <h2>
