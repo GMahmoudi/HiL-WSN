@@ -89,7 +89,7 @@ Using HiL-WSN, a big Wireless Sensor Network can be designed and simulated, both
 
 <pre><code>- Switch on the hardware nodes and connect the hybrid node to the PC.
 - Run the simulator.
-- Run "/server/server.py".
+- Run "/server/server.py"  (if exposeToInternet is true which is disabled by default).
 - Run "/pc_client/hybrid.py".
 - Start the simulation.
 </code></pre>
@@ -152,11 +152,11 @@ Launch mikroC IDE project file located in "nrf_pic12" directory , the file name 
 <h3>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
 
-<pre><code>- Python (we used Python 2.7.10)
+<pre><code>- Python (the project has been tested using Python 2.7.10)
     - pySerial library (used for the real hybrid node connection to PC).
     - tornado library (used for the web server).
-- OMNET++ 4
-- mikroC PRO (we used v6.6.2)
+- OMNET++ 4  (the project has been tested using OMNET++ v4.6)
+- mikroC PRO (the project has been tested using mikroC PRO v6.6.2)
 </code></pre>
 
 <h2>
