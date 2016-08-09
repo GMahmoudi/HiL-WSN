@@ -45,7 +45,7 @@ A hybrid node gathers the simulated network (OMNET++) and real nodes (NRF24L01 t
 ## Usage (simplified)
     - Switch on the hardware nodes and connect the hybrid node to the PC.
     - Run the simulator.
-    - Run "/server/server.py" ***if exposeToInternet is true which is disabled by default*** .
+    - Run "/server/server.py" (if exposeToInternet is true which is disabled by default) .
     - Run "/pc_client/hybrid.py".
     - Start the simulation.
 
