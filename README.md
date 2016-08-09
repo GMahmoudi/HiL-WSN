@@ -30,11 +30,6 @@ A hybrid node gathers the simulated network (OMNET++) and real nodes (NRF24L01 t
         - Simple : a pure virtual network (not connected to external hardware) , it's used to test or visualize the routing protocol on simulated nodes.
         - hw2sink : a pure hardware network (consisting of two hardware nodes and a sink) , it's used to test the hybrid node (which connects the two environments).
         - net : the main network which consists of simulated and real nodes .
-    
-
-
-- When selecting ***any network*** , and ***before*** starting the simulation, ***start the server*** that connects the simulator to the Internet so that you can view the data of the nodes from any device on your network.
-        - the server is located in the "server" directory , the file name is "server.py".
     - Connect the real hybrid node (the circuit which has the USB cable) to PC.
     - Get the COM port number (On windows from the Device Manager).
     - Start the file located in "pc_client" directory called "hybrid.py" with the port number as the first argument , this script connects the OMNET++ simulator to the real hybrid node (the circuit which is connected to the PC with the USB cable).
@@ -42,12 +37,15 @@ A hybrid node gathers the simulated network (OMNET++) and real nodes (NRF24L01 t
     - Switch on the hardware nodes.
     - Start the simulator now , and put your CPU on "high performance" energy profile and put the simulator on the fastest animation speed (so that the simulator time is closer to the real time).
     - In the simulator log you can see the messages ,that is delivered to the sink node, printed.
-    - To use the internet server , start your Internet browser , navigate to "http://127.0.0.1/static/index.html" in the "uri" field of the page type "/ws/x" where x is the node address.
+    
+    - To expose sink data to an external program like a web server,stop the simulation and open the network file, then change the parameter "exposeToInternet" of sink node to "true".
+    - Run the simlulation  and  start the external program which must be a udp client connecting to the port defined in the "GLOBALS.h" file called "RTS_PORT", for example run the web server "server.py" located in the "server" directory .
+        - To use this server , start your Internet browser , navigate to "http://127.0.0.1/static/index.html" in the "uri" field of the page type "/ws/x" where x is the node address.
 
 ## Usage (simplified)
     - Switch on the hardware nodes and connect the hybrid node to the PC.
     - Run the simulator.
-    - Run "/server/server.py".
+    - Run "/server/server.py" ***if exposeToInternet is true which is disabled by default*** .
     - Run "/pc_client/hybrid.py".
     - Start the simulation.
 
@@ -85,11 +83,11 @@ A hybrid node gathers the simulated network (OMNET++) and real nodes (NRF24L01 t
 
 ## Installation
 ### Requirements
-    - Python (we used Python 2.7.10)
+    - Python (the project has been tested using Python 2.7.10)
         - pySerial library (used for the real hybrid node connection to PC).
         - tornado library (used for the web server).
-    - OMNET++ 4
-    - mikroC PRO (we used v6.6.2)
+    - OMNET++ 4 (the project has been tested using OMNET++ v4.6)
+    - mikroC PRO (the project has been tested using mikroC PRO v6.6.2)
 
 
 ## Contact
