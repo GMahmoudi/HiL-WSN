@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link  href="assets/photor.min.css" rel="stylesheet">
   </head>
   <body>
     <section class="page-header">
@@ -45,6 +46,31 @@ Using HiL-WSN, a big Wireless Sensor Network can be designed and simulated, both
 <a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it works</h2>
 
 <p>A hybrid node gathers the simulated network (OMNET++) and real nodes (NRF24L01 transceiver module and PIC12LF1552). The hybrid node is connected to the PC running OMNET++ through USB, and to the real nodes using NRF24L01 tranciever module.</p>
+
+<div class="photor">
+
+    <div class="photor__viewport">
+
+        <div class="photor__viewportLayer">
+
+            <!-- Add photos -->
+            <img src="media/general.jpg" data-thumb="thumbs/1.jpg">
+            <img src="media/HWnode.jpg" data-thumb="thumbs/2.jpg">
+            <img src="media/hybrid.jpg" data-thumb="thumbs/3.jpg">
+        </div>
+
+        <div class="photor__viewportControl">
+            <div class="photor__viewportControlPrev"></div>
+            <div class="photor__viewportControlNext"></div>
+        </div>
+
+    </div>
+
+    <div class="photor__thumbs">
+        <div class="photor__thumbsWrap"></div>
+    </div>
+
+</div>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
@@ -179,6 +205,12 @@ Launch mikroC IDE project file located in "nrf_pic12" directory , the file name 
 
     </section>
 
-  
+  <script src="//ajax.googleapis.colim/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="assets/photor.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('.photor').photor();
+    });
+</script>
   </body>
 </html>
