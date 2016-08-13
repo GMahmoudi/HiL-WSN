@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>HiL-WSN by GMahmoudi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link  href="assets/css/photor.min.css" rel="stylesheet">
+    <link  href="assets/css/bjqs.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -47,29 +47,12 @@ Using HiL-WSN, a big Wireless Sensor Network can be designed and simulated, both
 
 <p>A hybrid node gathers the simulated network (OMNET++) and real nodes (NRF24L01 transceiver module and PIC12LF1552). The hybrid node is connected to the PC running OMNET++ through USB, and to the real nodes using NRF24L01 tranciever module.</p>
 
-<div class="photor">
-
-    <div class="photor__viewport">
-
-        <div class="photor__viewportLayer">
-
-            <!-- Add photos -->
-            <img src="media/general.jpg" data-thumb="media/general.jpg">
-            <img src="media/HWnode.jpg" data-thumb="media/HWnode.jpg">
-            <img src="media/hybrid.jpg" data-thumb="media/hybrid.jpg">
-        </div>
-
-        <div class="photor__viewportControl">
-            <div class="photor__viewportControlPrev"></div>
-            <div class="photor__viewportControlNext"></div>
-        </div>
-
-    </div>
-
-    <div class="photor__thumbs">
-        <div class="photor__thumbsWrap"></div>
-    </div>
-
+<div id="my-slideshow">
+	<ul class="bjqs">
+		<li><img src="media/general.jpg"></li>
+		<li><img src="media/hybrid.jpg"></li>
+		<li><img src="media/HWnode.jpg"></li>
+	</ul>
 </div>
 
 <h2>
@@ -206,11 +189,15 @@ Launch mikroC IDE project file located in "nrf_pic12" directory , the file name 
     </section>
 
   <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/photor.min.js"></script>
+  <script src="assets/js/bjqs.min.js"></script>
   <script>
-    $(document).ready(function() {
-        $('.photor').photor();
-    });
+    jQuery(document).ready(function($) {
+	$('#banner-fade').bjqs({
+		'height' : 320,
+		'width' : 620,
+		'responsive' : true
+	});
+});
 </script>
   </body>
 </html>
